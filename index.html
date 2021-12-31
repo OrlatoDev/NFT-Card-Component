@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <title>Frontend Mentor | NFT preview card component</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body class="flex flex-col justify-center items-center w-screen h-screen bg-veryDarkBlue-100 px-6 py-16 font-sans">
+    <div class="box rounded-lg bg-veryDarkBlue-300 p-6 max-w-xs">
+        <div class="img rounded-lg cursor-pointer hover:bg-cyan relative">
+            <img class="rounded-lg hover:opacity-50 peer" src="./images/image-equilibrium.jpg">
+            <img class="rounded-lg absolute inset-0 m-auto invisible peer-hover:visible" src="./images/icon-view.svg">
+        </div>
+        <div class="content">
+            <div class="title mt-6">
+                <h1 class="text-white hover:text-cyan cursor-pointer font-semibold text-xl">Equilibrium #3429</h1>
+            </div>
+            <div class="desc mt-2 text-softBlue font-light">
+                <p>Our Equilibrium collection promotes balance and calm.</p>
+            </div>
+            <div class="info mt-3 flex justify-between">
+                <div class="price">
+                    <div class="text-cyan flex flex-row font-semibold"><img src="./images/icon-ethereum.svg" class="mr-2"> 0.041 ETH</div>
+                </div>
+                <div class="days">
+                    <div class="text-softBlue flex flex-row font-normal"><img src="./images/icon-clock.svg" class="mr-2 w-6"> 3 days left</div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3 text-softBlue opacity-30">
+        <div class="credits flex flex-row items-center font-normal text-softBlue">
+            <img class="rounded-full border-2 h-10 mr-3" src="./images/image-avatar.png">
+            <p>Creation of <span class="text-white hover:text-cyan cursor-pointer">Jules Wyvern</span></p>
+        </div>
+    </div>
+    <div class="attribution text-white mt-2">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/OrlatoDev" target="_blank">OrlatoDev</a>.
+    </div>
+</body>
+</html>
